@@ -7014,3 +7014,13 @@ ul.chats li.out .message {
   border-radius: 0px !important;
   border: 1px solid #e5e5e5;
 }
+
+.panel-hover:hover {
+	background: #f5f5f5
+}
+
+
+
+
+
+
