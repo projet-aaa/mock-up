@@ -32,6 +32,7 @@
             <div class="navbar-header">
                 <a id="logo" href="index.html" class="navbar-brand"><span class="fa fa-rocket"></span><span class="logo-text">AAA</span><span style="display: none" class="logo-text-icon">µ</span></a></div>
             <div class="topbar-main">
+
                 <ul class="nav navbar navbar-top-links navbar-right mbn">
                     <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown">&nbsp;
                         <span class="hidden-xs">Robert John</span>&nbsp;<span class="caret"></span></a>
@@ -43,7 +44,6 @@
                 </ul>
             </div>
         </nav>
-        
     </div>
     <!--END TOPBAR-->
     <div id="wrapper">
@@ -62,7 +62,7 @@
 					<li><a href="#">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">PIM</span></a></li>
-					<li class="active"><a href="tob.html">
+					<li class="active"><a href="matiere.html">
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">TOB</span></a></li>
                 </ul>
@@ -75,12 +75,13 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
                 <div class="page-header pull-left">
                     <div class="page-title">
-                        TOB</div>
+                        CM1</div>
                 </div>
                 <ol class="breadcrumb page-breadcrumb pull-right">
                     <li><i class="fa fa-home"></i>&nbsp;<a href="accueil_eleve.html">Accueil</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
-                    <li class="hidden"><a href="matiere.html">TOB</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
-                    <li class="active">TOB</li>
+                    <li><a href="matiere.html">TOB</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                    <li class="hidden"><a href="matiere.html">CM1</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                    <li class="active">CM1</li>
                 </ol>
                 <div class="clearfix">
                 </div>
@@ -89,84 +90,89 @@
             <!--BEGIN CONTENT-->
             <div class="page-content">
                 <div id="tab-general">
+                    <div class="row mbl">
+						<div class="col-lg-12">
+                                
+							<div class="col-md-12">
+								<div id="area-chart-spline" style="width: 100%; height: 300px; display: none;">
+								</div>
+							</div>
+                                
+						</div>
 
-					<h2><font color="blue">CMs</font></h2>
-					
-					<div class="row">
 						<div class="col-lg-12">
-							<a href="lecture_home_page_student.html"><div class="panel panel-hover">
-								<div class="panel-body">
-									<div class="pull-right">
-										<h4>01/01</h4>
-									</div>
-									<h4>CM1</h4>
-								</div>
-							</div></a>
-							<a href="#"><div class="panel panel-hover">
-								<div class="panel-body">
-									<div class="pull-right">
-										<h4>02/01</h4>
-									</div>
-									<h4>CM2</h4>
-								</div>
-							</div></a>
-							<a href="#"><div class="panel panel-hover">
-								<div class="panel-body">
-									<div class="pull-right">
-										<h4>03/01</h4>
-									</div>
-									<h4>CM3</h4>
-								</div>
-							</div></a>
-						</div>
-					</div>
-				
-					<h2><font color="blue">TDs</font></h2>
-					
-					<div class="row">
 						<div class="col-lg-12">
-							<a href="#"><div class="panel panel-hover">
-								<div class="panel-body">
-									<div class="pull-right">
-										<h4>02/01</h4>
-									</div>
-									<h4>TD1</h4>
+                        <ul id="generalTab" class="nav nav-tabs responsive">
+                            <li class="active"><a href="#live-tab" data-toggle="tab">Direct</a></li>
+                            <li><a href="#faq-tab" data-toggle="tab">FAQ</a></li>
+                            <li><a href="#questionnary-tab" data-toggle="tab">Questionnaires</a></li>
+                        </ul>
+                        <div id="generalTabContent" class="tab-content responsive">
+                            <div id="live-tab" class="tab-pane fade in active">
+                                <div class="form-actions text-right pal">
+									<button type="submit" class="btn btn-primary">
+										Rejoindre un live</button>
 								</div>
-							</div></a>
-							<a href="#"><div class="panel panel-hover">
-								<div class="panel-body">
-									<div class="pull-right">
-										<h4>03/01</h4>
+                            </div>
+							
+							<div id="faq-tab" class="tab-pane fade">
+                                
+                            </div>
+							
+							<div id="questionnary-tab" class="tab-pane fade">
+								<div class="row">
+                                    <div class="col-lg-3">
+										<h2><font color="blue">Quiz</font></h2>
+							
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="panel panel-hover panel-nomargin">
+													<div class="panel-body panelbody-nopadding">
+														<div class="pull-right">
+															<h4>01/01</h4>
+														</div>
+														<h4>Quiz 1</h4>
+													</div>
+												</div>
+												<div class="panel panel-hover panel-nomargin">
+													<div class="panel-body panelbody-nopadding">
+														<div class="pull-right">
+															<h4>02/01</h4>
+														</div>
+														<h4>Quiz 2</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									
+										<h2><font color="blue">Questionnaires</font></h2>
+										
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="panel panel-hover panel-nomargin">
+													<div class="panel-body panelbody-nopadding">
+														<div class="pull-right">
+															<h4>02/01</h4>
+														</div>
+														<h4>Questionnaire 1</h4>
+													</div>
+												</div>
+												<div class="panel panel-hover panel-nomargin">
+													<div class="panel-body panelbody-nopadding">
+														<div class="pull-right">
+															<h4>03/01</h4>
+														</div>
+														<h4>Questionnaire 2</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										
 									</div>
-									<h4>TD2</h4>
 								</div>
-							</div></a>
+							</div>
 						</div>
-					</div>
-					
-					<h2><font color="blue">TPs</font></h2>
-					
-					<div class="row">
-						<div class="col-lg-12">
-							<a href="#"><div class="panel panel-hover">
-								<div class="panel-body">
-									<div class="pull-right">
-										<h4>03/01</h4>
-									</div>
-									<h4>TP1</h4>
-								</div>
-							</div></a>
-							<a href="#"><div class="panel panel-hover">
-								<div class="panel-body">
-									<div class="pull-right">
-										<h4>05/01</h4>
-									</div>
-									<h4>TP2</h4>
-								</div>
-							</div></a>
-						</div>
-					</div>
-
+                    </div>
                 </div>
             </div>
             <!--END CONTENT-->
