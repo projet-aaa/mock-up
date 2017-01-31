@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page TP prof</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+    <!--Loading bootstrap css-->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+    <link type="text/css" rel="stylesheet" href="styles/jquery-ui-1.10.4.custom.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/animate.css">
+    <link type="text/css" rel="stylesheet" href="styles/all.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="styles/style-responsive.css">
+    <link type="text/css" rel="stylesheet" href="styles/pace.css"><!-- loading bar -->
+</head>
+<body>
+<div>
+    <!--BEGIN BACK TO TOP-->
+    <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+    <!--END BACK TO TOP-->
+    <!--BEGIN TOPBAR-->
+    <div id="header-topbar-option-demo" class="page-header-topbar">
+        <nav id="topbar" role="navigation" style="margin-bottom: 0;" data-step="3" class="navbar navbar-default navbar-static-top">
+            <div class="navbar-header">
+                <a id="logo" href="index.html" class="navbar-brand"><span class="fa fa-rocket"></span><span class="logo-text">AAA</span><span style="display: none" class="logo-text-icon">µ</span></a></div>
+            <div class="topbar-main">
+
+                <ul class="nav navbar navbar-top-links navbar-right mbn">
+                    <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown">&nbsp;
+                        <span class="hidden-xs">Robert John</span>&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-user pull-right">
+                            <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
+                            <li><a href="Login.html"><i class="fa fa-key"></i>Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--END TOPBAR-->
+    <div id="wrapper">
+        <!--BEGIN SIDEBAR MENU-->
+        <nav id="sidebar" role="navigation" data-step="2" data-intro="Template has &lt;b&gt;many navigation styles&lt;/b&gt;"
+             data-position="right" class="navbar-default navbar-static-side">
+            <div class="sidebar-collapse menu-scroll">
+                <ul id="side-menu" class="nav">
+                    <div class="clearfix"></div>
+                    <li><a href="accueil_eleve.html"><i class="fa fa-home">
+                        <div class="icon-bg bg-green"></div>
+                    </i><span class="menu-title">Accueil</span></a></li>
+					<li><a href="#">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">PF</span></a></li>
+					<li><a href="#">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">PIM</span></a></li>
+					<li class="active"><a href="matiere.html">
+                        <div class="icon-bg bg-orange"></div>
+                    </i><span class="menu-title">TOB</span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="page-wrapper">
+            <!--BEGIN TITLE & BREADCRUMB PAGE-->
+            <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+                <div class="page-header pull-left">
+                    <div class="page-title">
+                        TP1</div>
+                </div>
+                <ol class="breadcrumb page-breadcrumb pull-right">
+                    <li><i class="fa fa-home"></i>&nbsp;<a href="accueil_eleve.html">Accueil</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                    <li><a href="matiere.html">TOB</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                    <li class="hidden"><a href="matiere.html">TP1</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                    <li class="active">TP1</li>
+                </ol>
+                <div class="clearfix">
+                </div>
+            </div>
+            <!--END TITLE & BREADCRUMB PAGE-->
+            <!--BEGIN CONTENT-->
+            <div class="page-content">
+                <div id="tab-general">
+                    <div class="row mbl">
+						<div class="col-lg-12">
+                                
+							<div class="col-md-12">
+								<div id="area-chart-spline" style="width: 100%; height: 300px; display: none;">
+								</div>
+							</div>
+                                
+						</div>
+
+						<div class="col-lg-12">
+						<div class="col-lg-12">
+                        <ul id="generalTab" class="nav nav-tabs responsive">
+                            <li class="active"><a href="#sujet-tab" data-toggle="tab">Sujet</a></li>
+                            <li><a href="#faq-tab" data-toggle="tab">FAQ</a></li>
+                        </ul>
+                        <div id="generalTabContent" class="tab-content responsive">
+                            <div id="sujet-tab" class="tab-pane fade in active">
+                                <iframe src="http://docs.google.com/gview?url=http://is2.4chan.org/po/1475393234571.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+                            </div>
+			    <div id="faq-tab" class="tab-pane fade">
+                                <div class="row">
+									<div class="col-lg-12">
+										<div class="wrapper wrapper-content animated fadeInRight">
+											<div class="faq-item">
+												<div class="row">
+													<div class="col-md-9">
+														<a data-toggle="collapse" href="#faq1" class="faq-question collapsed" aria-expanded="false">Quel est le sens de la vie ?</a>
+														<small>Ajouté par <strong>Somin Maurel</strong> <i class="fa fa-clock-o"></i> Aujourd'hui 14:40 - 27.01.2017</small>
+													</div>
+												</div>
+												<br>
+												<div class="row">
+													<div class="col-lg-12">
+														<div id="faq1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+															<div class="well">
+																<div class="pull-right">
+																	<div class="row">
+																		<div>
+																			<button type="submit" class="btn btn-primary"><b>+</b></button>
+																			<button type="submit" class="btn btn-primary"><b>-</b></button>
+                                                                                                                                                        <button type="button" class="btn btn-danger">Réponse problématique</button>
+																		</div>
+																		<span class="small font-bold">Voting </span><br>
+																		3
+                                                                                                                                        </div>
+																</div>
+																<p>
+																	<b>Réponse de Gibss</b>
+																</p>
+																<p>
+																	C'est par là ->
+																</p>
+															</div>
+															<div class="well">
+																<div class="pull-right">
+																	<div class="row">
+																		<div>
+																			<button type="submit" class="btn btn-primary"><b>+</b></button>
+																			<button type="submit" class="btn btn-primary"><b>-</b></button>
+                                                                                                                                                        <button type="button" class="btn btn-danger">Réponse problématique</button>
+																		</div>
+																		<span class="small font-bold">Voting </span><br>
+																		-2
+                                                                                                                                        </div>
+																</div>
+																<p>
+																	<b>Réponse de Vincent</b>
+																</p>
+																<p>
+																	Non c'est par ici <- !
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="faq-item">
+												<div class="row">
+													<div class="col-md-9">
+														<a data-toggle="collapse" href="#faq2" class="faq-question collapsed" aria-expanded="false">1 + 1 ?</a>
+														<small>Ajouté par <strong>Adam Shimi</strong> <i class="fa fa-clock-o"></i> Aujourd'hui 18h20 - 27.01.2017</small>
+													</div>
+													<div class="col-md-3 text-right">
+														<span class="small font-bold">Voting </span><br>
+														3
+													</div>
+												</div>
+												<br>
+												<div class="row">
+													<div class="col-lg-12">
+														<div id="faq2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+															<div class="well">
+																<div class="pull-right">
+																	<div class="row">
+																		<div>
+																			<button type="submit" class="btn btn-primary"><b>+</b></button>
+																			<button type="submit" class="btn btn-primary"><b>-</b></button>
+                                                                                                                                                        <button type="button" class="btn btn-danger">Réponse problématique</button>
+																		</div>
+																		<span class="small font-bold">Voting </span><br>
+																		3
+                                                                                                                                        </div>
+																</div>
+																<p>
+																	<b>Réponse d'el dictatore</b>
+																</p>
+																<p>
+																	Bah 2
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!--END CONTENT-->
+            <!--BEGIN FOOTER-->
+                      <div id="footer">
+                                <div class="copyright">
+                                    <a href="http://themifycloud.com">2014 © KAdmin Responsive Multi-Purpose Template</a></div>
+                            </div>
+            <!--END FOOTER-->
+        </div>
+        <!--END PAGE WRAPPER-->
+    </div>
+</div>
+<script src="script/jquery-1.12.4.min.js"></script>
+<script src="script/jquery-ui.js"></script><!-- additionnal features to jquery -->
+<script src="script/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="script/icheck.min.js"></script><!-- beautify checkbox -->
+<script src="script/custom.min.js"></script>
+<script src="script/pace.min.js"></script><!-- loading bar -->
+<script src="script/main.js"></script>
+</body>
+</html>
