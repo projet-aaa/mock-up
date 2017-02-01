@@ -103,6 +103,7 @@
                         <ul id="generalTab" class="nav nav-tabs responsive">
                             <li class="active"><a href="#quiz-tab" data-toggle="tab">Quiz et Questionnaires</a></li>
                             <li><a href="#faq-tab" data-toggle="tab">FAQ</a></li>
+                            <li><a href="#stats-tab" data-toggle="tab">Statistiques</a></li>
                         </ul>
                         <div id="generalTabContent" class="tab-content responsive">
                             <div id="quiz-tab" class="tab-pane fade in active">
@@ -252,6 +253,83 @@
 									</div>
 								</div>
                             </div>
+                            <div id="stats-tab" class="tab-pane fade">
+                                <div class="row">
+                                    <table id="datatable">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Question 2</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Réponse 1</th>&nbsp;&nbsp;
+                                                <td class="text-center">4</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Réponse 2</th>&nbsp;&nbsp;
+                                                <td class="text-center">2</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Réponse 3</th>&nbsp;&nbsp;
+                                                <td class="text-center">11</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Réponse 4</th>&nbsp;&nbsp;
+                                                <td class="text-center">1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12"><div id="container"></div></div>
+                                    <div class="col-md-4 col-xs-12">
+                        <div class="panel panel-grey">
+                            <div class="panel-heading">
+                                Filtres
+                            </div>
+                            <div class="panel-body pan">
+                                <h4 class="text-center">Groupes</h4>
+                                    <div class="col-xs-12 checkbox">
+                                        <label class="checkbox-inline"> 	
+                                            <input type="checkbox" name="optionsRadios"/>&nbsp;
+                                            Groupe 1INA (16)
+                                        </label><br>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="optionsRadios"/>&nbsp;
+                                            Groupe 1INB (12)
+                                        </label><br>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="optionsRadios"/>&nbsp;
+                                            Groupe 1INC (13)
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="optionsRadios"/>&nbsp;
+                                            Groupe 1IND (1)
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="optionsRadios"/>&nbsp;
+                                            Groupe 1INE (13)
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="optionsRadios"/>&nbsp;
+                                            Groupe 1INF (10)
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="optionsRadios"/>&nbsp;
+                                            Groupe 1ING (9)
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="optionsRadios"/>&nbsp;
+                                            Groupe 1INH (15)
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -277,5 +355,36 @@
 <script src="script/custom.min.js"></script>
 <script src="script/pace.min.js"></script><!-- loading bar -->
 <script src="script/main.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<script>$(function () {
+    Highcharts.chart('container', {
+        data: {
+            table: 'datatable'
+        },
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'U'
+            }
+        },
+        tooltip: {
+            formatter: function () {
+                return '<b>' + this.series.name + '</b><br/>' +
+                    this.point.y + ' ' + this.point.name.toLowerCase();
+            }
+        }
+    });
+});</script>
+
 </body>
 </html>
